@@ -120,6 +120,9 @@ BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 # OTA
 TARGET_OTA_ASSERT_DEVICE := secret,rosemary,maltose,rosemary_p
 
+# Lineage Health
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072                   # 2048      * 64   (pagesize)
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864         # 65536     * 1024 (sdc36)

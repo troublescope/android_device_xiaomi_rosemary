@@ -245,6 +245,10 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service
 
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
@@ -279,7 +283,6 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
-# Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-fpc.idc \
     $(LOCAL_PATH)/configs/idc/uinput-goodix.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-goodix.idc
