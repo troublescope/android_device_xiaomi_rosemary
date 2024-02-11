@@ -17,6 +17,21 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Matrixx 
+MATRIXX_MAINTAINER := Troublescope
+MATRIXX_CHIPSET := MT6785V/CD
+MATRIXX_BATTERY := 5000mah
+MATRIXX_DISPLAY := 1080X2400
+
+# Gapps
+WITH_GMS := true
+
+# AOSP Recovery
+TARGET_USES_AOSP_RECOVERY := true
+
+#Blur effect
+TARGET_ENABLE_BLUR := true	
+
 PRODUCT_NAME := lineage_rosemary
 PRODUCT_DEVICE := rosemary
 PRODUCT_MANUFACTURER := Xiaomi
